@@ -51,7 +51,7 @@ export default function Navbar() {
             src={Logo}
             alt="logo"
             width={50}
-            className="rounded-full z-1002"
+            className="rounded-full z-52"
           />
           <div className="hidden lg:flex items-center gap-8">
             {links.map((link, id) => (
@@ -75,7 +75,7 @@ export default function Navbar() {
             </button>
           </div>
           <button
-            className={`flex lg:hidden items-center gap-2 cursor-pointer z-1002 transition-all duration-600 ${
+            className={`flex lg:hidden items-center gap-2 cursor-pointer z-51 transition-all duration-600 ${
               isOpen ? "text-white" : "text-black"
             }`}
             onClick={() => setIsOpen(!isOpen)}

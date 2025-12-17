@@ -31,7 +31,7 @@ export default function HiddenMenu() {
   ];
   return (
     <div className="max-w-[1600px] mx-auto w-full lg:bg-white lg:border-b-2 lg:px-8 border-b-[#eeeeee]">
-      <div className="py-6">
+      <div className="pt-6 lg:py-6">
         <div className="font-futura-medium text-2xl xl:text-3xl mb-4">
           More on Ableton.com:
         </div>
@@ -50,17 +50,17 @@ export default function HiddenMenu() {
         <div className="font-futura-medium text-2xl xl:text-3xl mt-8 mb-4">
           More on Ableton:
         </div>
-        <ul className="flex lg:gap-8 flex-wrap lg:flex-nowrap">
+        <ul className="flex lg:gap-8 overflow-x-auto">
           {links2.map((link, id) => (
-            <div key={id} className="flex pr-4 pb-3 flex-col flex-1/2">
-              <li className="xl:text-xl font-futura-medium">{link.title}</li>
-              <li
+            <li key={id} className="flex pr-4 pb-3 flex-col min-w-[200px] lg:flex-1/2">
+              <div className="xl:text-xl font-futura-medium">{link.title}</div>
+              <div
                 key={id}
                 className="font-futura-light xl:text-xl nth-[5]:text-Orange cursor-not-allowed"
               >
                 {link.name}
-              </li>
-            </div>
+              </div>
+            </li>
           ))}
         </ul>
       </div>

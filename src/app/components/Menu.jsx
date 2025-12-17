@@ -4,12 +4,12 @@ import HiddenMenu from "./HiddenMenu";
 export default function Menu({ isOpen, links }) {
   return (
     <div
-      className={`absolute max-h-max bg-Dark-blue text-white inset-0 px-4 pb-12 pt-8 lg:py-8 transition-all duration-300 lg:hidden z-1001  ${
+      className={`absolute inset-0  bg-Dark-blue text-white px-4 pt-8 transition-all duration-300 lg:hidden z-50  ${
         isOpen ? "translate-y-0" : "-translate-y-full"
       }`}
     >
       <div className="translate-y-15">
-        <ul className="space-y-4">
+        <ul className="space-y-4 overflow-y-scroll h-60">
           {links.map((link, id) => (
             <li key={id} className="text-xl font-futura-medium">
               <a href="#" className="cursor-not-allowed">

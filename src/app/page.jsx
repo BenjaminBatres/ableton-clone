@@ -23,7 +23,7 @@ export default function Home() {
       <Navbar />
       <div className="max-w-[1600px] mx-auto w-full bg-white relative">
         <div className="px-8">
-          <ul className="flex items-center gap-8 sticky bg-white/85 w-full h-15 top-0 z-1000">
+          <ul className="flex items-center gap-8 sticky bg-white/85 w-full h-15 top-0 z-40">
             <li className="font-futura-medium cursor-not-allowed text-Orange">About</li>
             <li className="font-futura-medium cursor-not-allowed">Jobs</li>
             <li className="font-futura-medium cursor-not-allowed">Apprenticeships</li>
