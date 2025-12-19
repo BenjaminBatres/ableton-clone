@@ -141,7 +141,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="py-10">
+          <div className="sm:py-10">
             <div className="max-w-[1400px] mx-auto">
               <Image src={SectionCenterImage} alt="" />
             </div>
@@ -188,14 +188,14 @@ export default function Home() {
             />
           </div>
 
-          <div className="py-25">
+          <div className="pb-10 md:py-25">
             <div className="max-w-[1400px] mx-auto bg-Lightblue">
               <div className="flex flex-col xl:flex-row">
                 <div className="flex-1/2">
                   <Image src={SectionLeftImage4} alt="" />
                 </div>
                 <div className="flex-1/2 flex flex-col justify-center">
-                  <div className="max-w-[800px] xl:max-w-[400px] mx-auto px-5 py-4 sm:py-15">
+                  <div className="max-w-[800px] xl:max-w-[400px] mx-auto p-[8.3vw] xl:py-15 xl:px-0">
                     <h3 className="font-futura-medium text-xl lg:text-3xl mb-5">
                       We’re really proud of the work we’ve done so far. But
                       there’s so much more to come. If you’d like to be a part
