@@ -40,7 +40,7 @@ export default function Footer() {
     <div className="pt-[8.3vw] px-8 border-t-2 border-[#eee]">
       <div className="max-w-[1400px] mx-auto">
         <h2 className="font-futura-medium text-6xl mb-10">Ableton</h2>
-        <div className="flex flex-col-reverse lg:flex-row flex-wrap space-y-10 lg:space-y-18">
+        <div className="flex flex-col-reverse lg:flex-row flex-wrap space-y-6 lg:space-y-18">
           <div className="lg:w-[33%]">
             <FooterLinks
               links={[
@@ -49,7 +49,7 @@ export default function Footer() {
                 { name: "Jobs" },
               ]}
             />
-            <div className="flex gap-3 mt-4">
+            <div className="flex gap-3 mt-5">
               <FaFacebook className="text-blue-600 text-4xl" />
               <FaXTwitter className="text-4xl" />
               <FaYoutube className="text-red-500 text-4xl" />
@@ -115,7 +115,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row  justify-between gap-12 lg:items-center pb-[4.1vw]">
+        <div className="flex flex-col lg:flex-row justify-between gap-12 lg:items-center pb-[4.1vw] mt-2 lg:mt-0">
           <div className="flex flex-col lg:flex-row gap-3">
             {bottomLinks.map((link, id) => (
               <div
